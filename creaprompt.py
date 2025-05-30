@@ -21,7 +21,7 @@ def getfilename(folder):
     try:
         return [filename[3:-4] for filename in sorted(os.listdir(folder)) if filename.endswith(".csv")]
     except Exception as e:
-        print(f"➡️FMJ_CreaPrompt: Erreur lors de la lecture du dossier {folder}: {e}")
+        print(f"➡️FMJ: Erreur lors de la lecture du dossier {folder}: {e}")
         return []
 
 def select_random_line_from_collection(seed):
@@ -33,7 +33,7 @@ def select_random_line_from_collection(seed):
             lines = [line.strip() for line in file if line.strip()]
             return rng.choice(lines) if lines else ""
     except Exception as e:
-        print(f"➡️FMJ_CreaPrompt: Erreur lors de la lecture de collection.txt: {e}")
+        print(f"➡️FMJ: Erreur lors de la lecture de collection.txt: {e}")
         return ""
 
 def select_random_line_from_csv_file(category, folder, seed):
@@ -48,7 +48,7 @@ def select_random_line_from_csv_file(category, folder, seed):
                     return rng.choice(lines) if lines else ""
         return ""
     except Exception as e:
-        print(f"➡️FMJ_CreaPrompt: Erreur lors de la lecture de {category}: {e}")
+        print(f"➡️FMJ: Erreur lors de la lecture de {category}: {e}")
         return ""
 
 class CreaPrompt:
@@ -57,7 +57,7 @@ class CreaPrompt:
     RETURN_NAMES = ("prompt", "prompt_debug", "seed")
     OUTPUT_IS_LIST = (True, True, False)
     FUNCTION = "create_prompt"
-    CATEGORY = "FMJ_CreaPrompt"
+    CATEGORY = "FMJ"
     DESCRIPTION = "To reset all categories to disabled, right-click and select Fix Node."
 
     @classmethod
@@ -73,7 +73,7 @@ class CreaPrompt:
                         lines = [line.strip() for line in file if line.strip()]
                     required[filename[3:-4]] = (["disabled", "🎲random"] + lines, {"default": "disabled"})
         except Exception as e:
-            print(f"➡️FMJ_CreaPrompt: Erreur lors de la lecture du dossier csv: {e}")
+            print(f"➡️FMJ: Erreur lors de la lecture du dossier csv: {e}")
 
         return {
             "required": required,
@@ -120,13 +120,13 @@ class CreaPrompt:
                                 if widget_value == original_seed:
                                     workflow_node["widgets_values"][index] = seed
                 except Exception as e:
-                    print(f"➡️FMJ_CreaPrompt: Erreur lors de la mise à jour des métadonnées du workflow: {e}")
+                    print(f"➡️FMJ: Erreur lors de la mise à jour des métadonnées du workflow: {e}")
 
             if prompt and str(unique_id) in prompt and 'inputs' in prompt[str(unique_id)] and 'seed' in prompt[str(unique_id)]['inputs']:
                 try:
                     prompt[str(unique_id)]['inputs']['seed'] = seed
                 except Exception as e:
-                    print(f"➡️FMJ_CreaPrompt: Erreur lors de la mise à jour du prompt: {e}")
+                    print(f"➡️FMJ: Erreur lors de la mise à jour du prompt: {e}")
 
         if CreaPrompt_Collection == "enabled":
             prompt_value = select_random_line_from_collection(seed=seed)
@@ -163,13 +163,13 @@ class CreaPrompt:
         final_values_str = ",".join(final_values) if final_values else ""
         debug_values_str = ",".join(debug_values) if debug_values else ""
 
-        print(f"➡️FMJ_CreaPrompt: Prompt généré (exécution {execution_id}): {final_values_str}")
-        print(f"➡️FMJ_CreaPrompt: Graine finale: {seed}")
+        print(f"➡️FMJ: Prompt généré (exécution {execution_id}): {final_values_str}")
+        print(f"➡️FMJ: Graine finale: {seed}")
         return (final_values, debug_values, seed)
 
 NODE_CLASS_MAPPINGS = {
     "CreaPrompt": CreaPrompt,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "CreaPrompt": "FMJ_CreaPrompt",
+    "CreaPrompt": "FMJ",
 }
