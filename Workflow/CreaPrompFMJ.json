@@ -1,0 +1,303 @@
+{
+  "id": "4520bc26-e073-41f3-8059-f777041d53df",
+  "revision": 0,
+  "last_node_id": 5,
+  "last_link_id": 4,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "CreaPrompt",
+      "pos": [
+        -4290,
+        -1440
+      ],
+      "size": [
+        400,
+        1070
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "seed",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "seed"
+          },
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "prompt_debug",
+          "shape": 6,
+          "type": "STRING",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": [
+            3
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui_creaprompt_fmj",
+        "ver": "1.5.0",
+        "Node name for S&R": "CreaPrompt"
+      },
+      "widgets_values": [
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "enabled",
+        -350074654715224,
+        "randomize",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 1,
+      "type": "Seed (rgthree)",
+      "pos": [
+        -4670,
+        -1440
+      ],
+      "size": [
+        315,
+        130
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "SEED",
+          "shape": 3,
+          "type": "INT",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "0aa6d0a2032b78d9e8c057faeb825c94e3f07cca"
+      },
+      "widgets_values": [
+        -1,
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "type": "easy showAnything",
+      "pos": [
+        -3820,
+        -1440
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "a professional painting of Duane Allman, in brightly colored psychedelic shirt, playing a guitar, long hair, beautiful bone structure, symmetrical facial features, intricate, elegant, digital painting, concept art, smooth, sharp focus, illustration, from StarCraft by Ruan Jia and Mandy Jurgens and Artgerm and William-Adolphe Bouguerea, epic, stunning, gorgeous, intricate detail, much wow, ultra realistic, photorealism, 4K, masterpiece, trending on artstation"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "easy showAnything",
+      "pos": [
+        -3820,
+        -1170
+      ],
+      "size": [
+        350,
+        190
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "➡️a professional painting of Duane Allman, in brightly colored psychedelic shirt, playing a guitar, long hair, beautiful bone structure, symmetrical facial features, intricate, elegant, digital painting, concept art, smooth, sharp focus, illustration, from StarCraft by Ruan Jia and Mandy Jurgens and Artgerm and William-Adolphe Bouguerea, epic, stunning, gorgeous, intricate detail, much wow, ultra realistic, photorealism, 4K, masterpiece, trending on artstation"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "easy showAnything",
+      "pos": [
+        -3820,
+        -910
+      ],
+      "size": [
+        220,
+        88
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 3
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "914780300408798"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "INT"
+    ],
+    [
+      2,
+      2,
+      0,
+      3,
+      0,
+      "*"
+    ],
+    [
+      3,
+      2,
+      2,
+      4,
+      0,
+      "*"
+    ],
+    [
+      4,
+      2,
+      1,
+      5,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.8,
+      "offset": [
+        5594.357541076664,
+        1754.3666591466135
+      ]
+    },
+    "frontendVersion": "1.20.6"
+  },
+  "version": 0.4
+}
