@@ -1,11 +1,11 @@
 [project]
 name = "comfyui_creaprompt_FMJ"
-description = "Generate random prompts easily."
+description = "Generate random prompts easily for FMJ."
 version = "1.5.0"
 license = { file = "LICENSE" }
 
 [project.urls]
-Repository = "https://github.com/bulldog68/CreaPromptFMJ"
+Repository = "https://github.com/bulldog68/ComfyUI_CreaPrompt_FMJ"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
