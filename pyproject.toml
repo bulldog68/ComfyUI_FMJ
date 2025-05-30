@@ -9,6 +9,6 @@ Repository = "https://github.com/bulldog68/ComfyUI_CreaPrompt_FMJ"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "bulldog68"
+PublisherId = "Bulldog68"
 DisplayName = "ComfyUI_CreaPrompt_FMJ"
 Icon = ""
