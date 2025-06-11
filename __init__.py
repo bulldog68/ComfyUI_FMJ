@@ -1,15 +1,15 @@
 import os
 try:
-    from .creaprompt import CreaPrompt
-    print("➡️CreaPrompt: Importation réussie de creaprompt.py")
+    from .fmjcreaprompt import FMJCreaPrompt
+    print("➡️FMJ CreaPrompt: Importation réussie de fmjcreaprompt.py")
 except Exception as e:
-    print(f"➡️CreaPrompt: Erreur lors de l'importation de creaprompt.py: {e}")
+    print(f"➡️FMJ CreaPrompt: Erreur lors de l'importation de fmjcreaprompt.py: {e}")
     raise
 
 NODE_CLASS_MAPPINGS = {
-    "CreaPrompt": CreaPrompt,
+    "FMJCreaPrompt": FMJCreaPrompt,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "CreaPrompt": "CreaPrompt FMJ",
+    "FMJCreaPrompt": "FMJ CreaPrompt",
 }
 __all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
