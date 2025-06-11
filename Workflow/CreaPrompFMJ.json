@@ -1,15 +1,91 @@
 {
   "id": "4520bc26-e073-41f3-8059-f777041d53df",
   "revision": 0,
-  "last_node_id": 7,
-  "last_link_id": 13,
+  "last_node_id": 12,
+  "last_link_id": 24,
   "nodes": [
     {
-      "id": 7,
-      "type": "CreaPrompt",
+      "id": 3,
+      "type": "easy showAnything",
       "pos": [
-        -4260,
-        -1580
+        -4620,
+        -1710
+      ],
+      "size": [
+        350,
+        200
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 21
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "Scène d’horreur psychologique,Une pièce abandonnée avec des murs écaillés, un miroir fissuré reflétant une silhouette indistincte. Une chaise à bascule bouge seule, lumière blafarde d’une ampoule vacillante, ambiance oppressante, rendu hyper-réaliste, 8K. Négatif: flou, couleurs vives, artefacts, faible résolution."
+      ]
+    },
+    {
+      "id": 5,
+      "type": "easy showAnything",
+      "pos": [
+        -4620,
+        -1450
+      ],
+      "size": [
+        350,
+        190
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "➡️Scène d’horreur psychologique,Une pièce abandonnée avec des murs écaillés, un miroir fissuré reflétant une silhouette indistincte. Une chaise à bascule bouge seule, lumière blafarde d’une ampoule vacillante, ambiance oppressante, rendu hyper-réaliste, 8K. Négatif: flou, couleurs vives, artefacts, faible résolution."
+      ]
+    },
+    {
+      "id": 10,
+      "type": "FMJCreaPrompt",
+      "pos": [
+        -5060,
+        -1720
       ],
       "size": [
         400,
@@ -26,7 +102,7 @@
           "widget": {
             "name": "seed"
           },
-          "link": 13
+          "link": 23
         }
       ],
       "outputs": [
@@ -35,7 +111,7 @@
           "shape": 6,
           "type": "STRING",
           "links": [
-            10
+            21
           ]
         },
         {
@@ -43,45 +119,22 @@
           "shape": 6,
           "type": "STRING",
           "links": [
-            11
+            24
           ]
         },
         {
           "name": "seed",
           "type": "INT",
-          "links": [
-            12
-          ]
+          "links": null
         }
       ],
       "properties": {
-        "aux_id": "bulldog68/ComfyUI_CreaPrompt_FMJ",
-        "ver": "178e940435fb936562bb5c6a6402d40beeb0b827",
-        "Node name for S&R": "CreaPrompt"
+        "cnr_id": "comfyui_FMJ",
+        "ver": "4744877eda9e80af6770a82f32f9072356afad45",
+        "Node name for S&R": "FMJCreaPrompt"
       },
       "widgets_values": [
         "disabled",
-        "a angry woman",
-        "disabled",
-        "disabled",
-        "disabled",
-        "Burgundy",
-        "disabled",
-        "disabled",
-        "disabled",
-        "disabled",
-        "🎲random",
-        "disabled",
-        "disabled",
-        "a chirping sparrow",
-        "disabled",
-        "disabled",
-        "disabled",
-        "disabled",
-        "disabled",
-        "disabled",
-        "disabled",
-        "Antigua",
         "disabled",
         "disabled",
         "disabled",
@@ -90,137 +143,44 @@
         "disabled",
         "disabled",
         "disabled",
-        "B&W Photography",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
+        "disabled",
         "disabled",
         "disabled",
         "disabled",
         "enabled",
-        -488942502912721,
-        "fixed",
+        -733580755297815,
+        "randomize",
         "",
         ""
       ]
     },
     {
-      "id": 3,
-      "type": "easy showAnything",
-      "pos": [
-        -3800,
-        -1570
-      ],
-      "size": [
-        350,
-        200
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anything",
-          "shape": 7,
-          "type": "*",
-          "link": 10
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
-        "Node name for S&R": "easy showAnything"
-      },
-      "widgets_values": [
-        "insanely detailed procedural render expressive dynamic fluid action scene of honey mycelium field spacesuit protects the dancing coolest girl from doom as the planet they orbit sends spores surround her, photorealism, sharp focus, award winning, tristan eaton, victo ngai,, maxfield parrish, artgerm, ryden, intricate details, portrait, bokeh"
-      ]
-    },
-    {
-      "id": 5,
-      "type": "easy showAnything",
-      "pos": [
-        -3800,
-        -1270
-      ],
-      "size": [
-        350,
-        190
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anything",
-          "shape": 7,
-          "type": "*",
-          "link": 11
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
-        "Node name for S&R": "easy showAnything"
-      },
-      "widgets_values": [
-        "➡️insanely detailed procedural render expressive dynamic fluid action scene of honey mycelium field spacesuit protects the dancing coolest girl from doom as the planet they orbit sends spores surround her, photorealism, sharp focus, award winning, tristan eaton, victo ngai,, maxfield parrish, artgerm, ryden, intricate details, portrait, bokeh"
-      ]
-    },
-    {
-      "id": 4,
-      "type": "easy showAnything",
-      "pos": [
-        -3800,
-        -970
-      ],
-      "size": [
-        220,
-        88
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "anything",
-          "shape": 7,
-          "type": "*",
-          "link": 12
-        }
-      ],
-      "outputs": [
-        {
-          "name": "output",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "7ef0612ce7552968146ed41f5863a1638bf33412",
-        "Node name for S&R": "easy showAnything"
-      },
-      "widgets_values": [
-        "-488942502912721"
-      ]
-    },
-    {
-      "id": 1,
+      "id": 12,
       "type": "Seed (rgthree)",
       "pos": [
-        -4700,
-        -870
+        -5420,
+        -790
       ],
       "size": [
         315,
@@ -237,16 +197,16 @@
           "shape": 3,
           "type": "INT",
           "links": [
-            13
+            23
           ]
         }
       ],
       "properties": {
         "cnr_id": "rgthree-comfy",
-        "ver": "0aa6d0a2032b78d9e8c057faeb825c94e3f07cca"
+        "ver": "84a146fee39f7b3a8c6631dcac29bc13b077eb49"
       },
       "widgets_values": [
-        1054621165781334,
+        -1,
         "",
         "",
         ""
@@ -255,49 +215,41 @@
   ],
   "links": [
     [
+      21,
       10,
-      7,
       0,
       3,
       0,
       "*"
     ],
     [
-      11,
-      7,
+      23,
+      12,
+      0,
+      10,
+      0,
+      "INT"
+    ],
+    [
+      24,
+      10,
       1,
       5,
       0,
       "*"
-    ],
-    [
-      12,
-      7,
-      2,
-      4,
-      0,
-      "*"
-    ],
-    [
-      13,
-      1,
-      0,
-      7,
-      0,
-      "INT"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5856400000000002,
+      "scale": 1.1712800000000003,
       "offset": [
-        5759.329695271747,
-        1939.3968034518814
+        5989.529908926896,
+        1715.154614884672
       ]
     },
-    "frontendVersion": "1.20.6"
+    "frontendVersion": "1.21.7"
   },
   "version": 0.4
 }
