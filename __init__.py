@@ -1,27 +1,20 @@
-import os
-try:
-    from .fmjcreaprompt import FMJCreaPrompt
-    print("➡️FMJ CreaPrompt: Importation réussie de fmjcreaprompt.py")
-except Exception as e:
-    print(f"➡️FMJ CreaPrompt: Erreur lors de l'importation de fmjcreaprompt.py: {e}")
-    raise
+# __init__.py
 
-try:
-    from .fmjkontext import FMJKontext
-    print("➡️FMJ Kontext: Importation réussie de fmjkontext.py")
-except Exception as e:
-    print(f"➡️FMJ Kontext: Erreur lors de l'importation de fmjkontext.py: {e}")
-    raise
+from .ollama_manager import FMJLlmConfigNode
+from .ollama_unload import FMJUnloadAllLLM
+from .ollama_prompt import FMJOllamaPromptGenerator
+from .ollama_vision import FMJLlmOllamaVision
 
-# Modifié : Combinaison des deux nodes
 NODE_CLASS_MAPPINGS = {
-    "FMJCreaPrompt": FMJCreaPrompt,
-    "FMJKontext": FMJKontext,
+    "FMJLlmConfigNode": FMJLlmConfigNode,
+    "FMJUnloadAllLLM": FMJUnloadAllLLM,
+    "FMJOllamaPromptGenerator": FMJOllamaPromptGenerator,
+    "FMJLlmOllamaVision": FMJLlmOllamaVision,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "FMJCreaPrompt": "FMJ CreaPrompt",
-    "FMJKontext": "FMJ Kontext",
+    "FMJLlmConfigNode": "⚙️ FMJ Llm Config",
+    "FMJUnloadAllLLM": "🧹 FMJ Unload All LLM",
+    "FMJOllamaPromptGenerator": "🦙FMJ Ollama Prompt Generator",
+    "FMJLlmOllamaVision": "👁️ FMJ Llm Ollama Vision",
 }
-
-__all__ = ["NODE_CLASS_MAPPINGS", "NODE_DISPLAY_NAME_MAPPINGS"]
